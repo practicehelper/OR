@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Practice_set_2</title>
+  <style>
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+font-size: 12pt;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+border: none;
+border-top: 1px solid #1a1a1a;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<p><strong>Question</strong><br />
+What is an assignment problem in operations research?<br />
+<strong>Answer:</strong><br />
+An assignment problem is a type of optimization problem in operations
+research where the objective is to assign a set of tasks to a set of
+agents (such as workers, machines, or jobs) in a one-to-one manner while
+minimizing cost or maximizing efficiency. Each agent can be assigned to
+only one task, and each task to only one agent. The Hungarian method is
+commonly used to solve such problems efficiently.</p>
+<p><strong>Question</strong><br />
+Examine the concept of a Project Network in project management. How does
+it help in visualizing task dependencies, optimizing workflow, and
+ensuring timely project completion?<br />
+<strong>Answer:</strong><br />
+A Project Network is a graphical representation of project activities
+and their dependencies. It shows the sequence and interrelation of tasks
+through nodes (representing activities) and arrows (indicating
+dependencies). It helps project managers visualize how tasks are
+connected, identify critical paths, allocate resources effectively, and
+avoid delays by pinpointing bottlenecks. This aids in optimizing
+workflow and ensuring projects are completed on schedule.</p>
+<p><strong>Question</strong><br />
+Examine the role of optimality tests in solving transportation problems.
+How do these tests ensure that the best possible solution is achieved,
+and why are they important in optimization?<br />
+<strong>Answer:</strong><br />
+Optimality tests, such as the MODI (Modified Distribution) method or the
+stepping stone method, assess whether the current solution to a
+transportation problem can be improved further. These tests calculate
+opportunity costs for unoccupied cells; if all opportunity costs are
+non-negative, the solution is optimal. They are essential in
+optimization because they validate whether the minimum possible
+transportation cost has been reached, ensuring efficiency in resource
+allocation.</p>
+<p><strong>Question</strong><br />
+Analyze the role of a decision-maker in decision analysis. Discuss how
+they evaluate alternatives, assess risks and benefits, and select the
+best course of action in alignment with organizational goals and
+constraints. How do decision-making tools and techniques assist in
+making informed choices?<br />
+<strong>Answer:</strong><br />
+A decision-maker in decision analysis plays a crucial role in evaluating
+different alternatives under varying levels of certainty and risk. They
+assess each option based on expected outcomes, align choices with
+organizational objectives, and consider constraints such as budget,
+time, and risk tolerance. Tools like decision trees, payoff tables, and
+sensitivity analysis help in visualizing consequences, quantifying
+risks, and making rational, data-driven decisions that support strategic
+goals.</p>
+<p><strong>Question</strong><br />
+What is the main purpose of using PERT in project management?<br />
+<strong>Answer:</strong><br />
+The main purpose of using PERT (Program Evaluation and Review Technique)
+in project management is to handle uncertain activity durations by using
+probabilistic time estimates—optimistic, pessimistic, and most likely.
+It helps in identifying the critical path, estimating project completion
+time, and analyzing the probability of meeting deadlines, thus enabling
+better planning and control in projects with time variability.</p>
+<p><strong>Question</strong><br />
+Analyze why an LPP might become infeasible and how different constraints
+contribute to this situation.<br />
+<strong>Answer:</strong><br />
+A Linear Programming Problem (LPP) becomes infeasible when no solution
+satisfies all the given constraints simultaneously. This can occur if
+the constraints contradict each other, such as overlapping inequalities
+that create an empty feasible region. Tight or overly restrictive
+conditions, unrealistic resource limits, or conflicting objectives can
+also lead to infeasibility, making it impossible to find a solution that
+meets all the problem’s requirements.</p>
+<p><strong>Question</strong><br />
+How is an assignment problem different from a transportation
+problem?<br />
+<strong>Answer:</strong><br />
+An assignment problem involves assigning a set of tasks to a set of
+agents (such as workers or machines) to minimize the cost or maximize
+efficiency, where each task is assigned to only one agent and vice
+versa. On the other hand, a transportation problem deals with minimizing
+transportation costs for distributing goods from several suppliers to
+several consumers, where the supply and demand at various points must be
+balanced. The primary difference is that the assignment problem deals
+with one-to-one assignments, while the transportation problem involves
+multiple suppliers and consumers.</p>
+<p><strong>Question</strong><br />
+Investigate the concept of Project Completion Time in project
+management, including how it is determined and the factors that affect
+it.<br />
+<strong>Answer:</strong><br />
+Project Completion Time refers to the total time required to complete a
+project from start to finish, considering all tasks and activities
+involved. It is determined by calculating the time needed for each task,
+the dependencies between tasks, and the critical path (the longest
+sequence of dependent tasks). Factors affecting project completion time
+include resource availability, task dependencies, project complexity,
+delays, and unforeseen risks. Proper scheduling tools like Gantt charts
+or project networks help manage and optimize the timeline.</p>
+<p><strong>Question</strong><br />
+Investigate why an optimality test is necessary even after obtaining an
+initial basic feasible solution in a transportation problem. How does it
+help in achieving the most cost-efficient solution?<br />
+<strong>Answer:</strong><br />
+An optimality test is necessary after obtaining an initial basic
+feasible solution in a transportation problem to ensure that the
+solution cannot be improved further. Without testing for optimality,
+there could be better solutions that minimize transportation costs even
+though the initial solution is feasible. The test checks the opportunity
+costs for unoccupied cells and identifies if there’s a path that could
+reduce the total cost. If all opportunity costs are non-negative, the
+solution is optimal. This ensures the solution is cost-efficient and
+meets the problem’s objective.</p>
+<p><strong>Question</strong><br />
+Why is PERT useful in projects with uncertain activity durations?<br />
+<strong>Answer:</strong><br />
+PERT (Program Evaluation and Review Technique) is useful in projects
+with uncertain activity durations because it allows for probabilistic
+time estimates, which account for variability in activity durations.
+PERT uses three time estimates for each activity: optimistic,
+pessimistic, and most likely, and calculates the expected time. This
+enables project managers to estimate the overall project duration and
+assess the likelihood of meeting deadlines. PERT is particularly
+valuable for complex projects where precise scheduling is challenging
+due to uncertainty.</p>
+<p><strong>Question</strong><br />
+Compare and contrast infeasibility and unboundedness by analyzing their
+causes and effects in an LPP.<br />
+<strong>Answer:</strong><br />
+<strong>Infeasibility</strong> occurs in a Linear Programming Problem
+(LPP) when there is no feasible solution that satisfies all the
+constraints simultaneously. This happens when the constraints contradict
+each other, creating no overlap in the feasible region. The effect is
+that no solution can be found that meets the requirements of the
+problem.</p>
+<p><strong>Unboundedness</strong>, on the other hand, occurs when the
+feasible region extends infinitely in the direction of the objective
+function, meaning there is no limit to the optimal value. This typically
+happens when the objective function can increase or decrease
+indefinitely without violating any constraints. The effect is that the
+solution has no finite optimal value, and the problem is considered
+unbounded.</p>
+<p><strong>Question</strong><br />
+Analyze a real-world decision situation, such as a company&#39;s decision to
+launch a new product or invest in new technology, and determine the best
+decision under uncertainty using a payoff table.</p>
+<p><em>In this case, assume the company faces three possible market
+conditions: high demand, moderate demand, and low demand. The company
+has two alternatives: invest in the new product or choose not to invest.
+Construct a payoff table that compares the potential profits (or losses)
+for each alternative under each market condition. Evaluate the outcomes
+and determine which alternative provides the best possible result based
+on the goal of maximizing profit or minimizing loss. Based on this
+analysis, recommend the decision that offers the most favorable outcome
+under uncertainty.</em></p>
+<p><strong>Answer:</strong></p>
+<p>To create the payoff table, we place the
+<strong>alternatives</strong> in the <strong>left-most column</strong>
+and the <strong>states of nature (market conditions)</strong> in the
+<strong>first row</strong>. Here&#39;s the updated table:</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Decision / Market
+Condition</strong></th>
+<th style="text-align: center;"><strong>High Demand</strong></th>
+<th style="text-align: center;"><strong>Moderate Demand</strong></th>
+<th style="text-align: center;"><strong>Low Demand</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Invest in New Product</td>
+<td>$500,000</td>
+<td>$200,000</td>
+<td>-$100,000</td>
+</tr>
+<tr>
+<td>Do Not Invest</td>
+<td>$0</td>
+<td>$0</td>
+<td>$0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Evaluation Using the Laplace Criterion:</strong></p>
+<p>The <strong>Laplace Criterion</strong> (Equal Probability Criterion)
+assumes that each market condition has <strong>equal
+probability</strong>. Therefore, the decision-maker calculates the
+average payoff for each alternative and chooses the one with the highest
+expected value.</p>
+<ul>
+<li><p><strong>Invest in New Product</strong>:</p>
+<ul>
+<li><p>Expected Profit = (500,000 + 200,000 - 100,000) / 3 =
+<strong>$200,000</strong></p></li>
+</ul></li>
+<li><p><strong>Do Not Invest</strong>:</p>
+<ul>
+<li><p>Expected Profit = (0 + 0 + 0) / 3 = <strong>$0</strong></p></li>
+</ul></li>
+</ul>
+<p><strong>Recommendation:</strong></p>
+<p>Based on the goal of <strong>maximizing profit</strong> or
+<strong>minimizing loss</strong>, the company should <strong>invest in
+the new product</strong>, as it offers an expected profit of
+<strong>$200,000</strong>, compared to the $0 profit from choosing not
+to invest.</p>
+<p><strong>Other Decision Criteria:</strong></p>
+<p>While the <strong>Laplace Criterion</strong> provides a reasonable
+approach under conditions of uncertainty with equal probabilities, other
+decision-making criteria could also be used depending on the
+decision-maker&#39;s preferences or risk tolerance:</p>
+<ul>
+<li><p><strong>Maximax</strong>: The decision-maker chooses the
+alternative with the <strong>highest possible payoff</strong>, assuming
+the best-case scenario (optimistic approach).</p></li>
+<li><p><strong>Maximin</strong>: The decision-maker chooses the
+alternative with the <strong>best worst-case payoff</strong>, focusing
+on minimizing losses (pessimistic approach).</p></li>
+<li><p><strong>Minimax Regret</strong>: The decision-maker selects the
+alternative that minimizes the potential regret of not making the best
+choice, comparing payoffs to the best outcome for each state of
+nature.</p></li>
+</ul>
+<p>Each of these criteria offers a different perspective based on the
+level of optimism, pessimism, or desire to minimize regret in
+decision-making.</p>
+<p><strong>Question</strong><br />
+Identify an example of a constraint in LPP.<br />
+a) Maximize profit<br />
+b) Minimize cost<br />
+c) x + y ≤ 10<br />
+d) Solve using graphs<br />
+<strong>Correct Option:</strong> c) x + y ≤ 10<br />
+<strong>Explanation:</strong> In Linear Programming Problems (LPP),
+constraints are inequalities or equations that limit the feasible
+region. &quot;x + y ≤ 10&quot; is an example of such a constraint.</p>
+<p><strong>Question</strong><br />
+Infer the condition for multiple solutions in a transportation
+problem.<br />
+a) When supply exceeds demand<br />
+b) When opportunity costs have zeros in multiple positions<br />
+c) When all costs are equal<br />
+d) When degeneracy occurs<br />
+<strong>Correct Option:</strong> b) When opportunity costs have zeros in
+multiple positions<br />
+<strong>Explanation:</strong> Multiple optimal solutions in
+transportation problems occur when there are zeros in the opportunity
+cost (delta) values at more than one non-basic cell in the MODI
+method.</p>
+<p><strong>Question</strong><br />
+Identify when the Hungarian method is used.<br />
+a) Transportation problems<br />
+b) Assignment problems<br />
+c) Linear programming<br />
+d) Network flow problems<br />
+<strong>Correct Option:</strong> b) Assignment problems<br />
+<strong>Explanation:</strong> The Hungarian method is specifically
+designed for solving assignment problems, optimizing the total cost or
+profit of assigning tasks to agents.</p>
+<p><strong>Question</strong><br />
+Identify which method considers opportunity cost for optimality.<br />
+a) Least Cost Method<br />
+b) MODI Method<br />
+c) North-West Corner Rule<br />
+d) Hungarian Method<br />
+<strong>Correct Option:</strong> b) MODI Method<br />
+<strong>Explanation:</strong> The MODI (Modified Distribution) method
+evaluates opportunity costs to test the optimality of a transportation
+solution.</p>
+<p><strong>Question</strong><br />
+Calculate the total project duration using the critical path method
+(CPM).<br />
+a) Sum of all activities<br />
+b) Sum of all critical activities<br />
+c) Longest path through the network<br />
+d) Shortest path through the network<br />
+<strong>Correct Option:</strong> c) Longest path through the
+network<br />
+<strong>Explanation:</strong> In CPM, the total project duration is
+determined by the longest path from start to end in the project network,
+known as the critical path.</p>
+<p><strong>Question</strong><br />
+Determine the purpose of a Cost Breakdown Structure (CBS).<br />
+a) Decomposing project costs into components<br />
+b) Identifying project risks<br />
+c) Assigning tasks to team members<br />
+d) Developing a project timeline<br />
+<strong>Correct Option:</strong> a) Decomposing project costs into
+components<br />
+<strong>Explanation:</strong> CBS is used to break down the total cost
+of a project into manageable parts aligned with the work breakdown
+structure.</p>
+<p><strong>Question</strong><br />
+Infer the main characteristic of decision making under
+uncertainty.<br />
+a) Availability of complete information<br />
+b) Lack of information about probabilities<br />
+c) Definite outcomes for alternatives<br />
+d) Use of deterministic models<br />
+<strong>Correct Option:</strong> b) Lack of information about
+probabilities<br />
+<strong>Explanation:</strong> Decision-making under uncertainty occurs
+when the decision maker does not have sufficient information to assign
+probabilities to outcomes.</p>
+<p><strong>Question</strong><br />
+Infer when a decision maker would use the Laplace criterion.<br />
+a) When they assume all outcomes are equally likely.<br />
+b) When they are extremely optimistic.<br />
+c) When they avoid calculating probabilities.<br />
+d) When they rely solely on regret values.<br />
+<strong>Correct Option:</strong> a) When they assume all outcomes are
+equally likely.<br />
+<strong>Explanation:</strong> The Laplace criterion is based on the
+principle of insufficient reason, treating all outcomes as equally
+probable and choosing the alternative with the highest average
+payoff.</p>
+<p><strong>Question</strong><br />
+Indicate the primary objective of solving a transportation
+problem.<br />
+a) Minimizing transportation cost<br />
+b) Maximizing supply<br />
+c) Reducing delivery time<br />
+d) Equalizing supply and demand<br />
+<strong>Correct Option:</strong> a) Minimizing transportation cost<br />
+<strong>Explanation:</strong> The main goal of a transportation problem
+is to determine the most cost-efficient way to distribute products from
+sources to destinations while meeting supply and demand constraints.</p>
+<p><strong>Question</strong><br />
+Relate the Modified Distribution Method (MODI) to the transportation
+problem.<br />
+a) It finds the initial feasible solution<br />
+b) It tests for optimality and improves the solution<br />
+c) It is used only for maximization cases<br />
+d) It is the same as the stepping stone method<br />
+<strong>Correct Option:</strong> b) It tests for optimality and improves
+the solution<br />
+<strong>Explanation:</strong> MODI is used after an initial feasible
+solution is found to check for optimality and to iteratively improve the
+solution based on opportunity costs.</p>
+<p><strong>Question</strong><br />
+Predict the impact of an unbalanced transportation problem.<br />
+a) Results in an infeasible solution<br />
+b) Needs additional dummy rows or columns<br />
+c) Can be solved using the Hungarian method<br />
+d) Must be converted into an assignment problem<br />
+<strong>Correct Option:</strong> b) Needs additional dummy rows or
+columns<br />
+<strong>Explanation:</strong> When total supply doesn&#39;t equal total
+demand, dummy rows (for demand) or columns (for supply) are added to
+balance the problem before solving.</p>
+<p><strong>Question</strong><br />
+Infer the type of problem solved by the Hungarian method.<br />
+a) Transportation problem<br />
+b) Assignment problem<br />
+c) Network problem<br />
+d) Inventory Management<br />
+<strong>Correct Option:</strong> b) Assignment problem<br />
+<strong>Explanation:</strong> The Hungarian method is specifically
+designed for solving assignment problems, where tasks are assigned to
+agents at minimum cost or maximum profit.</p>
+<p><strong>Question</strong><br />
+Calculate the project’s critical path using network analysis.<br />
+a) Sum of all activity durations<br />
+b) Path with the most activities<br />
+c) Longest path with zero slack<br />
+d) Path with the least number of activities<br />
+<strong>Correct Option:</strong> c) Longest path with zero slack<br />
+<strong>Explanation:</strong> The critical path is the sequence of
+activities that determines the minimum project duration; it has the
+longest duration and zero slack.</p>
+<p><strong>Question</strong><br />
+Choose the primary purpose of a Work Breakdown Structure (WBS).<br />
+a) Identify project risks<br />
+b) Break down project scope into smaller components<br />
+c) Assign resources to tasks<br />
+d) Estimate project costs<br />
+<strong>Correct Option:</strong> b) Break down project scope into
+smaller components<br />
+<strong>Explanation:</strong> WBS decomposes the entire project into
+manageable sections, making it easier to plan, assign, and track
+tasks.</p>
+<p><strong>Question</strong><br />
+Relate payoff table to decision making.<br />
+a) It shows possible actions and their outcomes.<br />
+b) It identifies past decision failures.<br />
+c) It ranks decisions by complexity.<br />
+d) It excludes probabilities from decisions.<br />
+<strong>Correct Option:</strong> a) It shows possible actions and their
+outcomes.<br />
+<strong>Explanation:</strong> A payoff table provides a matrix showing
+the results (payoffs) of different actions under various states of
+nature, aiding in structured decision making.</p>
+<p><strong>Question</strong><br />
+Identify when a decision maker uses the Hurwicz criterion.<br />
+a) When they are extremely risk-averse.<br />
+b) When they consider both optimism and pessimism.<br />
+c) When they ignore probabilities.<br />
+d) When they rely on past trends.<br />
+<strong>Correct Option:</strong> b) When they consider both optimism and
+pessimism.<br />
+<strong>Explanation:</strong> The Hurwicz criterion is a compromise
+between the maximax (optimistic) and maximin (pessimistic) approaches,
+using a weighted average of the best and worst payoffs.</p>
+</body>
+</html>
