@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+      padding: 20px;
+    }
+
+    .quiz-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .question-card {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .options {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .options li {
+      padding: 8px 12px;
+      margin-bottom: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    .options li.correct {
+      font-weight: bold;
+      /* visually identical to regular options, except bold for clarity */
+    }
+
+    /* Optional: print-specific styles */
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+      .question-card {
+        box-shadow: none;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="question-card">
+      <div class="question">1. Define Operations Research.</div>
+      <ul class="options">
+        <li class="correct">The study of algorithms<br/>
+
+The application of mathematical methods for decision-making(Right Answer)<br/>
+The study of historical events<br/>
+The process of software development<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">2. Identify a key characteristic of Linear
+Programming.</div>
+      <ul class="options">
+    <li class="correct">It involves non-linear constraints<br/>
+It has only integer variables<br/>
+It includes an objective function and constraints(Right Answer)<br/>
+It does not require optimization<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">3. Select the correct step in formulating an LPP.</div>
+      <ul class="options">
+    <li class="correct">Ignoring constraints<br/>
+Defining the decision variables(Right Answer)<br/>
+Avoiding the objective function<br/>
+Randomly assigning coefficients<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">4. Write the general form of an LPP objective
+function.</div>
+      <ul class="options">
+    <li class="correct">Minimize or maximize a linear function(Right Answer)<br/>
+Solve using a differential equation<br/>
+Use probability distributions<br/>
+Define constraints only<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">5. State a limitation of Linear Programming.</div>
+      <ul class="options">
+    <li class="correct">It handles non-linear constraints<br/>
+It can only solve integer problems<br/>
+It assumes linear relationships(Right Answer)<br/>
+It is independent of optimization<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">6. Match the following: Big-M Method is used for...</div>
+      <ul class="options">
+    <li class="correct">Solving differential equations<br/>
+Handling artificial variables in simplex method(Right Answer)<br/>
+Finding feasible solutions in graphs<br/>
+Solving probability problems<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">7. Recognize a managerial application of Operations
+Research.</div>
+      <ul class="options">
+    <li class="correct">Optimizing production scheduling(Right Answer)<br/>
+Conducting employee satisfaction surveys<br/>
+Managing social media accounts<br/>
+Writing company blogs<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">8. Define Duality in Linear Programming.</div>
+      <ul class="options">
+    <li class="correct">The existence of two solutions<br/>
+A method to solve probability problems<br/>
+A concept where every LPP has an associated dual problem(Right Answer)<br/>
+A situation where no solution exists<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">9. Identify an example of a constraint in LPP.</div>
+      <ul class="options">
+    <li class="correct">Maximize profit<br/>
+Minimize cost<br/>
+x + y &lt;= 10(Right Answer)<br/>
+Solve using graphs<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">10. Select the graphical methods primary limitation.</div>
+      <ul class="options">
+    <li class="correct">Works only for two variables(Right Answer)<br/>
+Works for any problem size<br/>
+Requires integer solutions<br/>
+Ignores constraints<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">11. Write a key assumption in LPP.</div>
+      <ul class="options">
+    <li class="correct">Constraints are non-linear<br/>
+All functions are linear(Right Answer)<br/>
+Variables are always integers<br/>
+No constraints exist<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">12. State when multiple optimal solutions occur in
+LPP.</div>
+      <ul class="options">
+    <li class="correct">When constraints are violated<br/>
+When the objective function is parallel to a constraint(Right Answer)<br/>
+When no solution exists<br/>
+When the simplex method fails<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">13. Match the following: Degeneracy occurs when...</div>
+      <ul class="options">
+    <li class="correct">An optimal solution is unbounded<br/>
+Two or more solutions exist<br/>
+A basic variable has a zero value in the simplex table(Right Answer)<br/>
+No feasible solution exists<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">14. Recognize an advantage of the Simplex Method.</div>
+      <ul class="options">
+    <li class="correct">Works for all optimization problems<br/>
+Finds an optimal solution for LPP systematically(Right Answer)<br/>
+Requires no constraints<br/>
+Only works for integer programming<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">15. Define sensitivity analysis in LPP.</div>
+      <ul class="options">
+    <li class="correct">Evaluating changes in input values on output(Right Answer)<br/>
+Ignoring the constraints<br/>
+Using probability distributions<br/>
+Avoiding optimization<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">16. Identify the main goal of Integer Programming.</div>
+      <ul class="options">
+    <li class="correct">Allow fractional values<br/>
+Optimize with integer solutions(Right Answer)<br/>
+Use only continuous variables<br/>
+Solve without constraints<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">17. Select the primary characteristic of Zero-One
+Programming.</div>
+      <ul class="options">
+    <li class="correct">Variables take only binary values(Right Answer)<br/>
+Variables are continuous<br/>
+No constraints are required<br/>
+Only maximization problems can be solved<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">18. Write a scenario where Goal Programming is used.</div>
+      <ul class="options">
+    <li class="correct">Maximizing profits only<br/>
+Solving multi-objective decision-making problems(Right Answer)<br/>
+Avoiding constraints in optimization<br/>
+Finding only integer solutions<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">19. State a major application of Duality.</div>
+      <ul class="options">
+    <li class="correct">Forecasting weather patterns<br/>
+Analyzing economic trade-offs(Right Answer)<br/>
+Writing company policies<br/>
+Creating social media posts<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">20. Match the following: Infeasibility in LPP
+means...</div>
+      <ul class="options">
+    <li class="correct">No solution satisfies all constraints(Right Answer)<br/>
+There are multiple solutions<br/>
+There is an unbounded solution<br/>
+The solution process is incomplete<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">21. Recognize a special case in LPP.</div>
+      <ul class="options">
+    <li class="correct">Unbounded solutions(Right Answer)<br/>
+Non-linear programming<br/>
+Multiple constraints<br/>
+Statistical analysis<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">22. Define an optimal solution in LPP.</div>
+      <ul class="options">
+    <li class="correct">The solution that satisfies constraints and
+optimizes the objective function(Right Answer)<br/>
+A solution chosen randomly<br/>
+Any feasible solution<br/>
+A solution ignoring constraints<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">23. Identify the purpose of the Big-M Method.</div>
+      <ul class="options">
+    <li class="correct">Solving non-linear problems<br/>
+Handling artificial variables in simplex(Right Answer)<br/>
+Graphically solving problems<br/>
+Avoiding constraints<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">24. Select the correct statement about Two-Phase
+Method.</div>
+      <ul class="options">
+    <li class="correct">It avoids artificial variables<br/>
+It solves infeasible problems in two steps(Right Answer)<br/>
+It is only applicable to integer programming<br/>
+It is a graphical method<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">25. Write the significance of the objective function
+in LPP.</div>
+      <ul class="options">
+    <li class="correct">Defines the goal to be maximized or minimized(Right Answer)<br/>
+Avoids constraints<br/>
+Is not required in optimization<br/>
+Defines non-linear relationships<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">26. State when an unbounded solution occurs in LPP.</div>
+      <ul class="options">
+    <li class="correct">When there is no feasible solution<br/>
+When the objective function increases indefinitely(Right Answer)<br/>
+When constraints form a closed region<br/>
+When only integer solutions are possible<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">27. Match the following: The feasible region
+represents...</div>
+      <ul class="options">
+    <li class="correct">Any possible value of variables<br/>
+The set of all solutions satisfying constraints(Right Answer)<br/>
+The region outside constraints<br/>
+An area without optimal solutions<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">28. Recognize the role of constraints in LPP.</div>
+      <ul class="options">
+    <li class="correct">They define limits on decision variables(Right Answer)<br/>
+They are ignored in optimization<br/>
+They make the problem non-linear<br/>
+They always produce integer solutions<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">29. Define the purpose of Operations Research.</div>
+      <ul class="options">
+    <li class="correct">Optimizing decision-making using mathematical
+techniques(Right Answer)<br/>
+Studying organizational behavior<br/>
+Conducting employee surveys<br/>
+Analyzing historical data<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">30. Indicate the primary objective of solving a
+transportation problem.</div>
+      <ul class="options">
+    <li class="correct">Minimizing transportation cost(Right Answer)<br/>
+Maximizing supply<br/>
+Reducing delivery time<br/>
+Equalizing supply and demand<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">31. Identify the first step in the North-West Corner
+Rule.</div>
+      <ul class="options">
+    <li class="correct">Select the largest cost cell<br/>
+Allocate to the top-left corner cell(Right Answer)<br/>
+Choose the least cost cell<br/>
+Distribute supply evenly<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">32. Infer the limitation of the Least Cost Method in
+transportation problems.</div>
+      <ul class="options">
+    <li class="correct">Always guarantees optimality<br/>
+May not provide an initial feasible solution(Right Answer)<br/>
+Requires balanced supply and demand<br/>
+Only works for square matrices<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">33. Compute the earliest start time for an activity
+given its predecessors earliest finish time.</div>
+      <ul class="options">
+    <li class="correct">Earliest finish time of predecessor + 1<br/>
+Latest finish time of predecessor<br/>
+Earliest finish time of predecessor<br/>
+Earliest finish time of predecessor + duration(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">34. Predict the impact of an unbalanced
+transportation problem.</div>
+      <ul class="options">
+    <li class="correct">Results in an infeasible solution<br/>
+Needs additional dummy rows or columns(Right Answer)<br/>
+Can be solved using the Hungarian method<br/>
+Must be converted into an assignment problem<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">35. Relate the Vogels Approximation Method (VAM) to
+optimization.</div>
+      <ul class="options">
+    <li class="correct">It selects the highest cost first<br/>
+It considers penalty costs to make allocations(Right Answer)<br/>
+It always provides the optimal solution<br/>
+It cannot handle unbalanced problems<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">36. Represent a special case in transportation
+problems.</div>
+      <ul class="options">
+    <li class="correct">Assignment problems<br/>
+Degeneracy(Right Answer)<br/>
+Supply excess<br/>
+Non-linearity<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">37. Identify when the Hungarian method is used.</div>
+      <ul class="options">
+    <li class="correct">Transportation problems<br/>
+Assignment problems(Right Answer)<br/>
+Linear programming<br/>
+Network flow problems<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">38. Infer the condition for multiple solutions in a
+transportation problem.</div>
+      <ul class="options">
+    <li class="correct">When supply exceeds demand<br/>
+When opportunity costs have zeros in multiple positions(Right Answer)<br/>
+When all costs are equal<br/>
+When degeneracy occurs<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">39. Predict the result of applying the Least Cost
+Method to an unbalanced problem.</div>
+      <ul class="options">
+    <li class="correct">An infeasible solution<br/>
+Incorrect allocations<br/>
+A feasible but suboptimal solution(Right Answer)<br/>
+A directly optimal solution<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">40. Relate the Modified Distribution Method (MODI)
+to the transportation problem.</div>
+      <ul class="options">
+    <li class="correct">It finds the initial feasible solution<br/>
+It tests for optimality and improves the solution(Right Answer)<br/>
+It is used only for maximization cases<br/>
+It is the same as the stepping stone method<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">41. Represent a method that ensures fairness in
+assignment problems.</div>
+      <ul class="options">
+    <li class="correct">North-West Corner Rule<br/>
+Vogels Approximation Method<br/>
+MODI Method<br/>
+Hungarian Method(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">42. Indicate the reason for using a dummy row/column
+in unbalanced transportation problems.</div>
+      <ul class="options">
+    <li class="correct">To ensure a feasible solution(Right Answer)<br/>
+To increase costs artificially<br/>
+To remove extra supply<br/>
+To minimize supply<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">43. Identify which method considers opportunity cost
+for optimality.</div>
+      <ul class="options">
+    <li class="correct">Least Cost Method<br/>
+MODI Method(Right Answer)<br/>
+North-West Corner Rule<br/>
+Hungarian Method<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">44. Infer the type of problem solved by the
+Hungarian method.</div>
+      <ul class="options">
+    <li class="correct">Transportation problem<br/>
+Assignment problem(Right Answer)<br/>
+Network problem<br/>
+Inventory management<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">45. Indicate the best method to find an optimal
+solution for a transportation problem.</div>
+      <ul class="options">
+    <li class="correct">North-West Corner Rule<br/>
+Hungarian Method<br/>
+Modified Distribution Method(Right Answer)<br/>
+Branch and Bound<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">46. Predict the impact of a maximization case in a
+transportation problem.</div>
+      <ul class="options">
+    <li class="correct">It is unsolvable<br/>
+It requires cost conversion(Right Answer)<br/>
+It follows the Least Cost Method<br/>
+It needs an unbalanced supply<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">47. Relate the function of the stepping stone method.</div>
+      <ul class="options">
+    <li class="correct">Finding the initial feasible solution<br/>
+Finding optimality and improving allocations(Right Answer)<br/>
+Solving assignment problems<br/>
+Handling unbalanced cases<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">48. Represent a scenario that requires modifying a
+transportation table.</div>
+      <ul class="options">
+    <li class="correct">Balanced supply and demand<br/>
+Multiple solutions<br/>
+Degeneracy(Right Answer)<br/>
+Zero costs<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">49. Indicate why the Vogels Approximation Method is
+preferred over the North-West Corner Rule.</div>
+      <ul class="options">
+    <li class="correct">It guarantees optimality<br/>
+It considers cost penalties(Right Answer)<br/>
+It eliminates degeneracy<br/>
+It avoids unbalanced cases<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">50. Identify the main assumption in transportation
+models.</div>
+      <ul class="options">
+    <li class="correct">Equal cost for all routes<br/>
+Total supply equals total demand(Right Answer)<br/>
+Only one optimal solution exists<br/>
+Assignments are fixed<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">51. Infer what happens if an allocation leads to
+degeneracy.</div>
+      <ul class="options">
+    <li class="correct">The solution is optimal<br/>
+A dummy row/column must be added(Right Answer)<br/>
+An artificial variable is introduced<br/>
+The problem becomes unsolvable<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">52. Predict the number of allocations needed for a
+non-degenerate basic feasible solution with m rows and n columns.</div>
+      <ul class="options">
+    <li class="correct">m + n<br/>
+m × n<br/>
+m + n - 1(Right Answer)<br/>
+(m-1) × (n-1)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">53. Relate the Hungarian method to solving
+optimization problems.</div>
+      <ul class="options">
+    <li class="correct">It finds the feasible solution<br/>
+It minimizes the total cost(Right Answer)<br/>
+It handles degeneracy<br/>
+It balances supply and demand<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">54. Indicate how the MODI method determines an
+optimal solution.</div>
+      <ul class="options">
+    <li class="correct">By checking demand and supply balance<br/>
+By calculating opportunity costs(Right Answer)<br/>
+By selecting the lowest cost cell<br/>
+By making allocations directly<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">55. Identify the key difference between the Least
+Cost Method and Vogels Approximation Method.</div>
+      <ul class="options">
+    <li class="correct">LCM considers cost differences<br/>
+LCM directly provides an optimal solution<br/>
+LCM does not consider penalties(Right Answer)<br/>
+VAM ignores penalties<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">56. Infer why degeneracy occurs in transportation
+problems.</div>
+      <ul class="options">
+    <li class="correct">Too few allocations in a basic feasible
+solution(Right Answer)<br/>
+Too many optimal solutions<br/>
+Cost differences are too high<br/>
+It always occurs in balanced problems<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">57. Predict how an assignment problem with
+maximization objective is solved.</div>
+      <ul class="options">
+    <li class="correct">Convert it into a minimization problem(Right Answer)<br/>
+Use the North-West Corner Rule<br/>
+Apply the Least Cost Method<br/>
+It cannot be solved<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">58. Relate the role of opportunity cost in the
+Hungarian method.</div>
+      <ul class="options">
+    <li class="correct">It helps determine feasible solutions<br/>
+It ensures balanced assignments<br/>
+It minimizes total cost(Right Answer)<br/>
+It is ignored in the final step<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">59. Indicate the primary advantage of using Vogels
+Approximation Method.</div>
+      <ul class="options">
+    <li class="correct">It guarantees an optimal solution<br/>
+It provides a better starting feasible solution(Right Answer)<br/>
+It eliminates degeneracy<br/>
+It is the simplest method<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">60. Identify the correct condition for applying the
+Hungarian method.</div>
+      <ul class="options">
+    <li class="correct">When the problem is unbalanced<br/>
+When the problem is a minimization assignment problem(Right Answer)<br/>
+When transportation costs are equal<br/>
+When demand exceeds supply<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">61. Calculate the total project duration using the
+critical path method (CPM).</div>
+      <ul class="options">
+    <li class="correct">Sum of all activities<br/>
+Sum of all critical activities<br/>
+Longest path through the network(Right Answer)<br/>
+Shortest path through the network<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">62. Choose the primary purpose of a Work Breakdown
+Structure (WBS).</div>
+      <ul class="options">
+    <li class="correct">Identify project risks<br/>
+Break down project scope into smaller components(Right Answer)<br/>
+Assign resources to tasks<br/>
+Estimate project costs<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">63. Solve for the earliest start time of an activity
+without predecessors.</div>
+      <ul class="options">
+    <li class="correct">Zero(Right Answer)<br/>
+One<br/>
+Activity duration<br/>
+Project start time<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">64. Determine the float for a non-critical activity.</div>
+      <ul class="options">
+    <li class="correct">Difference between latest and earliest start
+times(Right Answer)<br/>
+Difference between latest and earliest finish times<br/>
+Duration of the activity<br/>
+Sum of latest start and earliest start times<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">65. Establish the relationship between CBS and WBS.</div>
+      <ul class="options">
+    <li class="correct">CBS is derived from WBS(Right Answer)<br/>
+WBS is derived from CBS<br/>
+CBS and WBS are independent<br/>
+CBS is a subset of WBS<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">66. Predict the impact of crashing on the project
+schedule.</div>
+      <ul class="options">
+    <li class="correct">Increases overall project cost<br/>
+Reduces project duration(Right Answer)<br/>
+Increases slack in all activities<br/>
+No effect on project duration<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">67. Solve for the total float of an activity given
+its early and late start times.</div>
+      <ul class="options">
+    <li class="correct">Late start - Early start(Right Answer)<br/>
+Early start - Late start<br/>
+Late finish - Early start<br/>
+Early finish - Late start<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">68. Write the formula for calculating slack time in
+project scheduling.</div>
+      <ul class="options">
+    <li class="correct">Late start - Early start(Right Answer)<br/>
+Early start - Late start<br/>
+Late finish - Early start<br/>
+Early finish - Late start<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">69. Calculate the projects critical path using
+network analysis.</div>
+      <ul class="options">
+    <li class="correct">Sum of all activity durations<br/>
+Path with the most activities<br/>
+Longest path with zero slack(Right Answer)<br/>
+Path with the least number of activities<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">70. Choose the best method for analyzing the impact
+of uncertainty in project scheduling.</div>
+      <ul class="options">
+    <li class="correct">CPM<br/>
+PERT(Right Answer)<br/>
+CBS<br/>
+OBS<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">71. Compute the expected project duration using PERT.</div>
+      <ul class="options">
+    <li class="correct">(Optimistic + 4(Most Likely) + Pessimistic)/6(Right Answer)<br/>
+(Optimistic + Most Likely + Pessimistic)/3<br/>
+(Optimistic + 2(Most Likely) + Pessimistic)/4<br/>
+(Optimistic + Most Likely + Pessimistic)/6<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">72. Determine the purpose of a Cost Breakdown
+Structure (CBS).</div>
+      <ul class="options">
+    <li class="correct">Decomposing project costs into components(Right Answer)<br/>
+Identifying project risks<br/>
+Assigning tasks to team members<br/>
+Developing a project timeline<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">73. Establish the connection between OBS and WBS in
+project management.</div>
+      <ul class="options">
+    <li class="correct">OBS maps organizational units to WBS elements(Right Answer)<br/>
+WBS maps organizational units to CBS<br/>
+OBS and WBS are unrelated<br/>
+OBS defines project timeline<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">74. Predict the result of resource levelling on a
+project schedule.</div>
+      <ul class="options">
+    <li class="correct">Increases project costs<br/>
+Reduces slack in all activities<br/>
+Reduces fluctuations in resource demand(Right Answer)<br/>
+Shortens project duration<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">75. Solve for the latest finish time of an activity
+given its latest start time and duration.</div>
+      <ul class="options">
+    <li class="correct">Latest start + Duration(Right Answer)<br/>
+Latest start - Duration<br/>
+Latest start * Duration<br/>
+Latest start / Duration<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">76. Write the objective of crashing a project
+schedule.</div>
+      <ul class="options">
+    <li class="correct">Minimize total project cost<br/>
+Increase resource utilization<br/>
+Reduce project duration at minimum additional cost(Right Answer)<br/>
+Maximize slack time<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">77. Calculate the total float for an activity with
+known earliest and latest finish times.</div>
+      <ul class="options">
+    <li class="correct">Latest finish - Earliest finish(Right Answer)<br/>
+Earliest finish - Latest finish<br/>
+Earliest start - Latest start<br/>
+Duration of the activity<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">78. Choose the main advantage of using PERT over CPM.</div>
+      <ul class="options">
+    <li class="correct">PERT accounts for uncertainty(Right Answer)<br/>
+PERT is faster to compute<br/>
+PERT does not require network diagrams<br/>
+PERT is deterministic<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">79. Establish the function of resource smoothing in
+project management.</div>
+      <ul class="options">
+    <li class="correct">Ensuring resources are not over-allocated(Right Answer)<br/>
+Reducing project duration<br/>
+Increasing total project cost<br/>
+Eliminating non-critical tasks<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">80. Predict the effect of increasing activity
+duration on the project schedule.</div>
+      <ul class="options">
+    <li class="correct">Project duration increases(Right Answer)<br/>
+Project cost decreases<br/>
+More activities become non-critical<br/>
+No impact on project duration<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">81. Represent an issue that arises when using the
+North-West Corner Rule.</div>
+      <ul class="options">
+    <li class="correct">It gives the best solution directly<br/>
+It ignores cost minimization(Right Answer)<br/>
+It handles unbalanced cases better<br/>
+It requires penalty cost calculations<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">82. Write the formula for calculating variance in
+PERT estimation.</div>
+      <ul class="options">
+    <li class="correct">((Pessimistic - Optimistic)/6)^2(Right Answer)<br/>
+((Pessimistic - Optimistic)/3)^2<br/>
+(Optimistic - Pessimistic)^2/6<br/>
+(Pessimistic + Optimistic)/2<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">83. Calculate the latest start time of an activity
+given its latest finish and duration.</div>
+      <ul class="options">
+    <li class="correct">Latest finish - Duration(Right Answer)<br/>
+Latest finish + Duration<br/>
+Latest finish * Duration<br/>
+Latest finish / Duration<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">84. Choose the best method for reducing project
+duration while minimizing cost.</div>
+      <ul class="options">
+    <li class="correct">Crashing(Right Answer)<br/>
+Resource levelling<br/>
+PERT<br/>
+OBS<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">85. Identify the key factor affecting decision
+making under uncertainty.</div>
+      <ul class="options">
+    <li class="correct">Perfect knowledge of future events<br/>
+Subjective probability estimation(Right Answer)<br/>
+Availability of past data<br/>
+Standardized decision rules<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">86. Determine the total slack for an activity given
+its latest and earliest start times.</div>
+      <ul class="options">
+    <li class="correct">Latest start - Earliest start(Right Answer)<br/>
+Earliest start - Latest start<br/>
+Duration of the activity<br/>
+Total project duration<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">87. Calculate the variance of a PERT activity
+duration estimate.</div>
+      <ul class="options">
+    <li class="correct">((Pessimistic - Optimistic)/6)^2(Right Answer)<br/>
+((Pessimistic - Optimistic)/3)^2<br/>
+(Pessimistic + Optimistic)/6<br/>
+(Pessimistic - Optimistic)^2/6<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">88. Choose the correct method to handle uncertainty
+in project scheduling.</div>
+      <ul class="options">
+    <li class="correct">PERT(Right Answer)<br/>
+CPM<br/>
+CBS<br/>
+OBS<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">89. Indicate the first phase of decision making.</div>
+      <ul class="options">
+    <li class="correct">Problem identification(Right Answer)<br/>
+Solution implementation<br/>
+Evaluation<br/>
+Feedback<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">90. Identify the type of decision made under
+structured conditions with clear rules.</div>
+      <ul class="options">
+    <li class="correct">Strategic decision<br/>
+Operational decision<br/>
+Tactical decision<br/>
+Programmed decision(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">91. Establish the relationship between slack and the
+critical path.</div>
+      <ul class="options">
+    <li class="correct">Critical activities have zero slack(Right Answer)<br/>
+Slack increases project duration<br/>
+Slack is independent of the critical path<br/>
+All activities have slack<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">92. Predict the result of not considering resource
+constraints in scheduling.</div>
+      <ul class="options">
+    <li class="correct">Over-allocation of resources(Right Answer)<br/>
+Reduced project duration<br/>
+Increased project slack<br/>
+Optimized cost structure<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">93. Infer the main characteristic of decision making
+under uncertainty.</div>
+      <ul class="options">
+    <li class="correct">Availability of complete information<br/>
+Lack of information about probabilities(Right Answer)<br/>
+Definite outcomes for alternatives<br/>
+Use of deterministic models<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">94. Predict the impact of incorrect probability
+estimation in decision making.</div>
+      <ul class="options">
+    <li class="correct">Better decision accuracy<br/>
+Higher risk of opportunity loss(Right Answer)<br/>
+No impact on decision quality<br/>
+Reduced financial gains<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">95. Relate payoff table to decision making.</div>
+      <ul class="options">
+    <li class="correct">It shows possible actions and their outcomes.(Right Answer)<br/>
+It identifies past decision failures.<br/>
+It ranks decisions by complexity.<br/>
+It excludes probabilities from decisions.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">96. Represent the purpose of an opportunity loss
+table.</div>
+      <ul class="options">
+    <li class="correct">To identify missed gains from choices.(Right Answer)<br/>
+To calculate total financial gains.<br/>
+To replace payoff tables in analysis.<br/>
+To compare only risk-free decisions.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">97. Indicate which decision phase involves
+evaluating different alternatives.</div>
+      <ul class="options">
+    <li class="correct">Problem definition<br/>
+Analysis<br/>
+Choice(Right Answer)<br/>
+Implementation<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">98. Infer why non-programmed decisions require more
+analysis.</div>
+      <ul class="options">
+    <li class="correct">They have predefined rules.<br/>
+They involve new unstructured problems.(Right Answer)<br/>
+They focus only on routine tasks.<br/>
+They depend on lower-level employees.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">99. Solve for the probability of project completion
+within a given time using PERT.</div>
+      <ul class="options">
+    <li class="correct">Use normal distribution and standard deviation(Right Answer)<br/>
+Use CPM duration estimates<br/>
+Use network diagrams<br/>
+Use only optimistic estimates<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">100. Write the formula for total project cost given
+normal and crash costs.</div>
+      <ul class="options">
+    <li class="correct">Normal cost + Crash cost(Right Answer)<br/>
+Normal cost - Crash cost<br/>
+Crash cost * Normal cost<br/>
+Crash cost / Normal cost<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">101. Predict the result of ignoring opportunity loss
+in decision making.</div>
+      <ul class="options">
+    <li class="correct">Improved decision accuracy<br/>
+Missed potential profits(Right Answer)<br/>
+Lower risk exposure<br/>
+Better resource allocation<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">102. Relate tactical decisions to operational
+strategy.</div>
+      <ul class="options">
+    <li class="correct">They set broad organizational goals.<br/>
+They influence short-term functional areas.(Right Answer)<br/>
+They define long-term market positions.<br/>
+They eliminate uncertainty in decisions.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">103. Represent how decision trees assist in uncertain
+decision making.</div>
+      <ul class="options">
+    <li class="correct">By providing a structured decision path.(Right Answer)<br/>
+By eliminating all risks.<br/>
+By making random choices.<br/>
+By reducing decision complexity.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">104. Indicate the main use of a payoff table.</div>
+      <ul class="options">
+    <li class="correct">To evaluate alternative decisions based on
+outcomes.(Right Answer)<br/>
+To assess employee performance.<br/>
+To calculate business revenue.<br/>
+To measure production efficiency.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">105. Identify a key limitation of decision making
+under risk.</div>
+      <ul class="options">
+    <li class="correct">Probabilities are completely unknown.<br/>
+It always leads to financial loss.<br/>
+Decision outcomes depend on assigned probabilities.(Right Answer)<br/>
+It eliminates all uncertainties.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">106. Compute the earliest finish time of an activity
+given its earliest start and duration.</div>
+      <ul class="options">
+    <li class="correct">Earliest start + Duration(Right Answer)<br/>
+Earliest start - Duration<br/>
+Earliest start * Duration<br/>
+Earliest start / Duration<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">107. Infer the difference between programmed and
+non-programmed decisions.</div>
+      <ul class="options">
+    <li class="correct">Both follow predefined rules.<br/>
+Programmed decisions deal with routine situations.(Right Answer)<br/>
+Non-programmed decisions have fixed outcomes.<br/>
+Both eliminate uncertainty.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">108. Predict the consequence of poor data quality in
+decision making.</div>
+      <ul class="options">
+    <li class="correct">Increased accuracy<br/>
+Lower decision confidence(Right Answer)<br/>
+No impact on decision outcomes<br/>
+Faster decision process<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">109. Relate decision trees to expected value
+calculations.</div>
+      <ul class="options">
+    <li class="correct">They ignore probability distributions.<br/>
+They rely on historical trends.<br/>
+They help in computing expected monetary value.(Right Answer)<br/>
+They focus on qualitative aspects only.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">110. Represent a decision-making scenario with
+complete knowledge of outcomes.</div>
+      <ul class="options">
+    <li class="correct">Decision under uncertainty<br/>
+Decision under risk<br/>
+Decision under certainty(Right Answer)<br/>
+Heuristic decision making<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">111. Determine the critical path in a network diagram.</div>
+      <ul class="options">
+    <li class="correct">Path with the longest duration(Right Answer)<br/>
+Path with the most activities<br/>
+Path with maximum slack<br/>
+Path with minimum activities<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">112. Indicate why decision making under uncertainty
+is challenging.</div>
+      <ul class="options">
+    <li class="correct">Outcomes are predetermined.<br/>
+Probabilities are not known.(Right Answer)<br/>
+There is no need for analysis.<br/>
+Decisions are always profitable.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">113. Identify the main component of an opportunity
+loss table.</div>
+      <ul class="options">
+    <li class="correct">Total costs of all decisions.<br/>
+Difference between actual and best possible payoff.(Right Answer)<br/>
+Projected revenue for each alternative.<br/>
+Fixed costs of decision options.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">114. Infer the importance of sensitivity analysis in
+decision making.</div>
+      <ul class="options">
+    <li class="correct">It predicts all possible outcomes.<br/>
+It identifies the most profitable option.<br/>
+It examines how changes in variables affect decisions.(Right Answer)<br/>
+It ensures perfect decision accuracy.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">115. Predict the advantage of using decision trees.</div>
+      <ul class="options">
+    <li class="correct">They guarantee correct decisions.<br/>
+They simplify complex choices.(Right Answer)<br/>
+They replace managerial judgment.<br/>
+They eliminate uncertainty.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">116. Relate strategic decisions to organizational
+growth.</div>
+      <ul class="options">
+    <li class="correct">They impact long-term success.(Right Answer)<br/>
+They focus only on daily operations.<br/>
+They require no external analysis.<br/>
+They are routine decisions.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">117. Represent the purpose of maximin decision
+criterion.</div>
+      <ul class="options">
+    <li class="correct">To maximize the best possible outcome.<br/>
+To choose the decision with the least worst outcome.(Right Answer)<br/>
+To rely on expected monetary values.<br/>
+To minimize the best outcome.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">118. Indicate which decision rule is most
+conservative.</div>
+      <ul class="options">
+    <li class="correct">Maximax<br/>
+Laplace<br/>
+Minimax regret<br/>
+Maximin(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">119. Identify when a decision maker uses the Hurwicz
+criterion.</div>
+      <ul class="options">
+    <li class="correct">When they are extremely risk-averse.<br/>
+When they consider both optimism and pessimism.(Right Answer)<br/>
+When they ignore probabilities.<br/>
+When they rely on past trends.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">120. Infer why expected monetary value is useful in
+decision making.</div>
+      <ul class="options">
+    <li class="correct">It eliminates uncertainty.<br/>
+It quantifies outcomes using probabilities.(Right Answer)<br/>
+It relies on intuition rather than data.<br/>
+It ignores opportunity costs.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">121. Predict the impact of misinterpreting
+opportunity loss tables.</div>
+      <ul class="options">
+    <li class="correct">Better decision-making outcomes.<br/>
+Inaccurate assessment of decision regret.(Right Answer)<br/>
+No effect on financial decisions.<br/>
+Improved risk management.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">122. Relate the maximax rule to risk-taking behavior.</div>
+      <ul class="options">
+    <li class="correct">It is used by highly risk-averse decision
+makers.<br/>
+It considers only the worst-case scenario.<br/>
+It favors the most optimistic decision.(Right Answer)<br/>
+It always results in the lowest regret.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">123. Represent why probability assessment is crucial
+in decision making under risk.</div>
+      <ul class="options">
+    <li class="correct">It eliminates uncertainty.<br/>
+It allows for better decision ranking.(Right Answer)<br/>
+It reduces the number of alternatives.<br/>
+It ignores worst-case scenarios.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">124. Indicate the key factor distinguishing decisions
+under risk and uncertainty.</div>
+      <ul class="options">
+    <li class="correct">Availability of probabilities.(Right Answer)<br/>
+Number of alternatives.<br/>
+Size of the organization.<br/>
+Complexity of calculations.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">125. Identify a drawback of using the minimax regret
+criterion.</div>
+      <ul class="options">
+    <li class="correct">It assumes equal probability for all events.(Right Answer)<br/>
+It ignores opportunity losses.<br/>
+It focuses only on extreme pessimism.<br/>
+It requires accurate probability estimates.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">126. Infer when a decision maker would use the
+Laplace criterion.</div>
+      <ul class="options">
+    <li class="correct">When they assume all outcomes are equally
+likely.(Right Answer)<br/>
+When they are extremely optimistic.<br/>
+When they avoid calculating probabilities.<br/>
+When they rely solely on regret values.<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">127. Identify the meaning of \'M\' in M/M/1 queue.</div>
+      <ul class="options">
+    <li class="correct">Multi-server<br/>
+Mean service rate<br/>
+Markovian arrival(Right Answer)<br/>
+Maximum queue length<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">128. Infer the impact of increasing the arrival rate
+in an M/M/1 queue.</div>
+      <ul class="options">
+    <li class="correct">Decrease in queue length<br/>
+Increase in waiting time(Right Answer)<br/>
+Decrease in service rate<br/>
+No impact on performance<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">129. Predict what happens if the service rate is
+lower than the arrival rate in an M/M/1 queue.</div>
+      <ul class="options">
+    <li class="correct">Queue disappears<br/>
+Queue grows indefinitely(Right Answer)<br/>
+Queue remains stable<br/>
+Queue length decreases<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">130. Indicate the queue discipline typically assumed
+in M/M/1 models.</div>
+      <ul class="options">
+    <li class="correct">Priority Scheduling<br/>
+Random Selection<br/>
+First Come First Serve(Right Answer)<br/>
+Last In First Out<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">131. Identify the key difference between M/M/1 and
+M/M/C queues.</div>
+      <ul class="options">
+    <li class="correct">Number of queues<br/>
+Arrival distribution<br/>
+Service discipline<br/>
+Number of servers(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">132. Compute the standard deviation of a PERT
+activity duration.</div>
+      <ul class="options">
+    <li class="correct">(Pessimistic - Optimistic)/6(Right Answer)<br/>
+(Pessimistic + Optimistic)/6<br/>
+(Pessimistic - Optimistic)/3<br/>
+(Optimistic + Pessimistic)/3<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">133. Infer the role of the Poisson process in queuing
+models.</div>
+      <ul class="options">
+    <li class="correct">Controls service discipline<br/>
+Determines queue length<br/>
+Predicts departure rates<br/>
+Describes arrival rates(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">134. Predict the effect of increasing the number of
+servers in an M/M/C queue.</div>
+      <ul class="options">
+    <li class="correct">Higher blocking probability<br/>
+Reduced waiting time(Right Answer)<br/>
+No impact on service time<br/>
+Increased queue length<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">135. Represent a key characteristic of an M/M/C/K
+queue.</div>
+      <ul class="options">
+    <li class="correct">Infinite customer population<br/>
+No blocking<br/>
+Limited queue capacity(Right Answer)<br/>
+Single server<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">136. Indicate the primary goal of game theory.</div>
+      <ul class="options">
+    <li class="correct">Optimize decision-making(Right Answer)<br/>
+Increase randomness<br/>
+Avoid Nash equilibria<br/>
+Reduce information<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">137. Infer the condition for a saddle point in a
+two-person zero-sum game.</div>
+      <ul class="options">
+    <li class="correct">Strategies are mixed<br/>
+Game has no equilibrium<br/>
+MaxMin equals MinMax(Right Answer)<br/>
+Payoff matrix is symmetric<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">138. Predict the outcome of a game with a saddle
+point.</div>
+      <ul class="options">
+    <li class="correct">The game is unsolvable<br/>
+A mixed strategy must be used<br/>
+A pure strategy solution exists(Right Answer)<br/>
+The game requires infinite strategies<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">139. Relate the MinMax principle to decision-making.</div>
+      <ul class="options">
+    <li class="correct">Maximize minimum gain<br/>
+Minimize maximum loss(Right Answer)<br/>
+Minimize minimum loss<br/>
+Maximize maximum gain<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">140. Represent a scenario where dominance rule
+applies.</div>
+      <ul class="options">
+    <li class="correct">All strategies are equally good<br/>
+One strategy is always better than another(Right Answer)<br/>
+Strategies are randomly chosen<br/>
+Players have identical payoffs<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">141. Indicate the main characteristic of a zero-sum
+game.</div>
+      <ul class="options">
+    <li class="correct">Total gain equals total loss(Right Answer)<br/>
+All players win<br/>
+All players lose<br/>
+Payoff is always positive<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">142. Identify the best strategy in a strictly
+determined game.</div>
+      <ul class="options">
+    <li class="correct">Iterative strategy<br/>
+Pure strategy(Right Answer)<br/>
+Mixed strategy<br/>
+Random strategy<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">143. Infer the implication of the dominance rule.</div>
+      <ul class="options">
+    <li class="correct">Reduces total payoffs<br/>
+Eliminates inferior strategies(Right Answer)<br/>
+Creates new optimal strategies<br/>
+Increases complexity<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">144. Predict the impact of a mixed strategy in game
+theory.</div>
+      <ul class="options">
+    <li class="correct">Reduces payoffs<br/>
+Adds randomness(Right Answer)<br/>
+Guarantees victory<br/>
+Removes uncertainty<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">145. Relate game theory to queuing models.</div>
+      <ul class="options">
+    <li class="correct">Minimizes arrival rates<br/>
+Determines server speed<br/>
+Optimizes service allocation(Right Answer)<br/>
+Predicts queue length<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">146. Represent the difference between pure and mixed
+strategies.</div>
+      <ul class="options">
+    <li class="correct">Both are equivalent<br/>
+Pure strategies involve randomness mixed strategies do not<br/>
+Pure strategies are deterministic mixed strategies involve
+probabilities(Right Answer)<br/>
+Mixed strategies never lead to equilibrium<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">147. Indicate the significance of Nash equilibrium in
+game theory.</div>
+      <ul class="options">
+    <li class="correct">All strategies are random<br/>
+Payoffs are always equal<br/>
+One player always wins<br/>
+No player benefits from unilateral deviation(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">148. Identify the condition when a game has no saddle
+point.</div>
+      <ul class="options">
+    <li class="correct">Game is cooperative<br/>
+Mixed strategy is needed(Right Answer)<br/>
+Pure strategy is optimal<br/>
+Game is not zero-sum<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">149. Infer the importance of the payoff matrix.</div>
+      <ul class="options">
+    <li class="correct">Represents strategic outcomes(Right Answer)<br/>
+Determines queue length<br/>
+Controls service time<br/>
+Eliminates uncertainty<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">150. Predict the impact of an additional server in an
+M/M/C queue.</div>
+      <ul class="options">
+    <li class="correct">Has no effect<br/>
+Reduces waiting time(Right Answer)<br/>
+Increases service time<br/>
+Eliminates the queue<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">151. Relate queuing theory to real-life applications.</div>
+      <ul class="options">
+    <li class="correct">Stock market trends<br/>
+Random number generation<br/>
+Chemical reactions<br/>
+Call centers and traffic flow(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">152. Represent a key assumption of M/M/1 queues.</div>
+      <ul class="options">
+    <li class="correct">Batch arrivals<br/>
+Fixed queue length<br/>
+Multiple servers<br/>
+Exponential service times(Right Answer)<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">153. Indicate a real-world example of an M/M/C/K
+queue.</div>
+      <ul class="options">
+    <li class="correct">Stock market orders<br/>
+Single ATM queue<br/>
+Emergency rooms with limited beds(Right Answer)<br/>
+Restaurant with unlimited seating<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">154. Identify the significance of the arrival rate in
+queuing models.</div>
+      <ul class="options">
+    <li class="correct">Fixes queue length<br/>
+Determines congestion level(Right Answer)<br/>
+Eliminates waiting time<br/>
+Controls service speed<br/>
+</li></ul></div>
+    <div class="question-card">
+      <div class="question">155. Infer why game theory is important in business
+strategy.</div>
+      <ul class="options">
+    <li class="correct">Controls consumer demand<br/>
+Predicts future stock prices<br/>
+Eliminates uncertainty<br/>
+Optimizes competitive decisions(Right Answer)<br/>
+</li></ul></div>
+  </div>
+</body>
+</html>
